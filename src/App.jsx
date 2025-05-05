@@ -1,27 +1,24 @@
+import React from "react"
 import ReactLogo from "./assets/react.svg"
 
 
 const date = new Date().getFullYear()
 
-export const App = () => {
-	return <div className="App">
-	<header className="App-header">
-		<img src={ReactLogo} className="App-logo" alt="logo" />
-		<p>
-			Edit <code>src/App.js</code> and save to reload 1 .
-		</p>
-		<a
-			className="App-link"
-			href="https://reactjs.org"
-			target="_blank"
-			rel="noopener noreferrer"
-		>
-			Learn React
-		</a>
-		<p>{date}</p>
-	</header>
-</div>
-}
+export const App = () => { // во втором случае императивный  код
+	return React.createElement(
+		'div',
+		{ className: 'App' },
+		React.createElement(
+			'header',
+			{ className: 'App-header' },
+			React.createElement('img', { src: ReactLogo }),
+			React.createElement('p', null, 'Edit src/App.js and save to reload 1. '),
+			React.createElement('a', { href: 'https://reactjs.org' }, 'Learn React'),
+			React.createElement('p', null, date),
+		),
+	);
+};
+
 
 
 // Весь код в App.jsx - декларативный
