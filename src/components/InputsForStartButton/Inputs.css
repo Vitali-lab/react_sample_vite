@@ -1,0 +1,72 @@
+.input_menu {
+	display: flex;
+	gap: 50px;
+	flex-direction: column;
+	margin-bottom: 50px;
+}
+.input_menu input {
+	width: 500px;
+	height: 30px;
+	border-radius: 10px;
+	border: 5px solid rgb(171, 135, 238);
+	padding: 10px;
+	font-size: 30px;
+	color: rgb(171, 135, 238);
+}
+.input_menu h1 {
+	font-size: 50px;
+	color: rgb(153, 153, 153);
+	font-weight: 500;
+}
+.input_name {
+	position: relative;
+}
+.input_count {
+	position: relative;
+}
+.button_save {
+	position: absolute;
+	left: 470px;
+	top: 13px;
+	background-color: white;
+	border: none;
+	color: rgb(171, 135, 238);
+	padding-left: 20px;
+	cursor: pointer;
+	transition: all 0.3s ease;
+}
+.button_save svg {
+	font-size: 30px;
+}
+.button_save svg:hover {
+	color: rgb(211, 43, 43);
+	transition: all 0.3s ease;
+}
+.input_count {
+	display: flex;
+	flex-direction: column;
+}
+.buttons_count {
+	display: flex;
+	column-gap: 20px;
+	justify-content: center;
+}
+.buttons_count button {
+	margin-top: 20px;
+	width: 150px;
+	height: 50px;
+	border: 5px solid rgb(171, 135, 238);
+	font-size: 30px;
+	font-weight: 500;
+	border-radius: 10px;
+	background-color: white;
+	color: rgb(171, 135, 238);
+}
+.input_count p {
+	position: absolute;
+	top: -30px;
+	left: 100px;
+	color: rgb(153, 153, 153);
+	font-size: 25px;
+	font-weight: 500;
+}

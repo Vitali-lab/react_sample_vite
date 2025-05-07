@@ -9,12 +9,7 @@ body {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+
 	height: 100vh;
-}
-img {
-	width: 300px;
-	margin-bottom: 50px;
-}
-a {
-	color: blue;
+	background-color: rgb(171, 135, 238);
 }

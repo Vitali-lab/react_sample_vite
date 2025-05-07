@@ -1,24 +1,27 @@
 import React from "react"
-import ReactLogo from "./assets/react.svg"
+import './App.css'
+import StartButton from './components/StartButton/StartButton'
+import Main from './components/Main/Main'
 
 
-const date = new Date().getFullYear()
 
-export const App = () => { // во втором случае императивный  код
-	return React.createElement(
-		'div',
-		{ className: 'App' },
-		React.createElement(
-			'header',
-			{ className: 'App-header' },
-			React.createElement('img', { src: ReactLogo }),
-			React.createElement('p', null, 'Edit src/App.js and save to reload 1. '),
-			React.createElement('a', { href: 'https://reactjs.org' }, 'Learn React'),
-			React.createElement('p', null, date),
-		),
-	);
+export const App = () => {
+
+	const [open , setOpen] = React.useState(false)
+
+	return (
+		<div className="main-menu ">
+
+			<StartButton  open = {open} setOpen = {setOpen}/>
+			{open && <Main /> }
+
+
+
+		</div>
+
+	)
 };
 
 
 
-// Весь код в App.jsx - декларативный
+
